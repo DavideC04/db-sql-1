@@ -1,0 +1,23 @@
+Esercizio 1:
+SELECT COUNT(*) FROM students WHERE YEAR(date_of_birth)=1990;
+
+Esercizio 2:
+SELECT COUNT(*) FROM courses WHERE cfu > 10; 
+
+Esercizio 3:
+SELECT COUNT(*) FROM students WHERE TIMESTAMPDIFF(YEAR , date_of_birth , CURDATE()) >30; 
+
+Esercizio 4:
+SELECT COUNT(*) FROM courses WHERE period='I semestre' AND YEAR=1;
+
+Esercizio 5:
+SELECT COUNT(*) FROM exams WHERE `date` ='2020-06-20' AND HOUR (`hour`) >= 14; 
+
+Esercizio 6:
+SELECT COUNT(*) from degrees where level='magistrale'; 
+
+Esercizio 7:
+SELECT COUNT(id) from departments;  
+
+Esercizio 8:
+SELECT COUNT(*) FROM teachers WHERE phone IS NULL;  
